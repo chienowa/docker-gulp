@@ -8,4 +8,5 @@ or
 
 docker-compose up -d
 
+docker exec -it gulpcont gulp
 
