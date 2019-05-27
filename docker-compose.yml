@@ -1,0 +1,14 @@
+version: '3'
+services:
+  gulpserver:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: gulpserver
+    tty: true
+    volumes:
+      - ./:/apps
+    working_dir: /apps
+    ports:
+      - "8000:8000"
+    command: gulp webserver
