@@ -8,5 +8,5 @@ or
 
 docker-compose up -d
 
-docker exec -it gulpcont gulp
+docker exec -it gulpserver gulp server
 

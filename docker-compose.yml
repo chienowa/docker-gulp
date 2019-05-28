@@ -11,4 +11,6 @@ services:
     working_dir: /apps
     ports:
       - "8000:8000"
-    command: gulp webserver
+      - "3000:3000"
+      - "3001:3001"
+    command: /bin/bash
