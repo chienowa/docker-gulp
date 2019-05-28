@@ -1,12 +1,14 @@
 # docker-gulp
 
-docker build ./ -t gulpdev
-docker run --name gulpserver -it -d -v {local src directory}:/apps -w /apps gulpdev
-docker exec -it gulpserver gulp
+## Usage
+$ cd {working_directory}
+$ docker-compose up -d
+$ docker exec -it gulpserver gulp
 
 or 
 
-docker-compose up -d
+$ docker build ./ -t gulpdev
+$ docker run --name gulpserver -it -d -v {local src directory}:/apps -w /apps gulpdev
+$ docker exec -it gulpserver gulp
 
-docker exec -it gulpserver gulp server
 
